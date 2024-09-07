@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <div id="real">
+        <header>
+            <button id="theme">Dark mode</button>
+        </header>
+
+        <div id="box">
+            <div id="works">
+
+                <div id="level">
+                    <p>not started</p>
+                    <p>in pregress</p>
+                    <p>completed</p>
+                </div>
+
+                <ul id="todos">
+                    <li id="notStarted" ondrop="dropHandler(event)" ondragover="dragOverHandler(event)">
+                        <button id="addTodo">+ add todo</button>
+                    </li>
+                    <li id="inPregress" ondrop="dropHandler(event)" ondragover="dragOverHandler(event)"></li>
+                    <li id="completed" ondrop="dropHandler(event)" ondragover="dragOverHandler(event)"></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="modal">
+        <div id="header">
+            <p>add todo</p>
+            <i id="close" class='bx bx-x'></i>
+        </div>
+        <div id="yourtodo">
+            <input id="input_modal" type="text" placeholder="your todo..">
+            <button id="btn_modal">add todo</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
